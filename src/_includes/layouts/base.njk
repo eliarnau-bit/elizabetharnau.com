@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }} - Elizabeth Arnau</title>
+<meta name="description" content="{{ description }}">
+<meta property="og:title" content="{{ title }} - Elizabeth Arnau">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/assets/images/2020/05/LOGO_ES-sinFondo.png">
+<link rel="icon" href="/assets/images/2020/04/favicon-Icono.png">
+<link rel="stylesheet" href="/assets/css/style.css">
+{% block head %}{% endblock %}
+</head>
+<body class="wp-singular page elementor-page elementor-kit-24{% if bodyClass %} {{ bodyClass }}{% endif %}">
+<div class="elementor elementor-page">
+{% include "partials/header.html" %}
+<main>
+{{ content | safe }}
+</main>
+</div>
+{% include "partials/footer.html" %}
+{% for js in scripts %}
+<script defer src="/assets/js/{{ js }}"></script>
+{% endfor %}
+{% block scripts %}{% endblock %}
+</body>
+</html>
