@@ -1,0 +1,20 @@
+{
+  "_readme": "301 redirects from the live IONOS/WordPress site, to be recreated as Cloudflare Redirect Rules once DNS moves (migration plan Phase 6). Chained redirects have been flattened to their final destination. Traffic counts are from the live site's Redirection plugin at the time of migration (2026-07) - re-check before cutover in case they've shifted.",
+  "redirects": [
+    { "from": "/photography/", "to": "/production/", "hits": 139 },
+    { "from": "/design-copy/", "to": "/styling/", "hits": 5 },
+    { "from": "/lifestyle-portfolio/", "to": "/lifestyle-illustration/", "hits": 234 },
+    { "from": "/portfolio-jewelry/", "to": "/jewelry-illustration/", "hits": 205 },
+    { "from": "/portfolio-fine-art/", "to": "/fine-art/", "hits": 171 },
+    { "from": "/portfolio-fantasy/", "to": "/fantasy-illustration/", "hits": 189 },
+    { "from": "/portfolio-beauty/", "to": "/beauty-illustration/", "hits": 146 },
+    { "from": "/portfolio-fashion/", "to": "/fashion-illustration/", "hits": 253 },
+    { "from": "/fashion-design-copy/", "to": "/production/", "hits": 35, "note": "originally chained to /photography/ which itself redirects to /production/ - flattened here" },
+    { "from": "/blog/", "to": "/fashiondesign/", "hits": 588 },
+    { "from": "/illustration/", "to": "/art/", "hits": 152, "note": "NEEDS VERIFICATION - '/art/' is not one of the rebuilt pages; check what this resolves to on the live site before setting up the rule" },
+    { "from": "/portfolio/", "to": "/art/", "hits": 158, "note": "originally chained through /illustration/ - flattened here, same verification needed as above" },
+    { "from": "/5-secrets-of-advertising-illustration/", "to": "/5-secrets-in-advertising-illustration/", "hits": 0, "note": "OUT OF SCOPE - target is a blog post that was not part of the rebuilt static site (no blog was in scope). 0 recorded hits, but flag to Elizabeth before dropping." },
+    { "from": "/10-secrets-of-advertising-illustration/", "to": "/5-secrets-in-advertising-illustration/", "hits": 0, "note": "same as above" },
+    { "from": "/the-unlimited-world-of-advertising-illustration/", "to": "/5-secrets-in-advertising-illustration/", "hits": 0, "note": "same as above" }
+  ]
+}
