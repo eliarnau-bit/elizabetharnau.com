@@ -1,0 +1,582 @@
+{
+  "WA29_40x30-1-2": {
+    "product": "Penelope Vogue",
+    "variant": "40x30",
+    "printful_variant_id": null
+  },
+  "WA29_80x60-1-2": {
+    "product": "Penelope Vogue",
+    "variant": "80x60",
+    "printful_variant_id": null
+  },
+  "WA29_40x30-1-1-1": {
+    "product": "Orange Vogue",
+    "variant": "40x30",
+    "printful_variant_id": null
+  },
+  "WA29_80x60-1-1-1": {
+    "product": "Orange Vogue",
+    "variant": "80x60",
+    "printful_variant_id": null
+  },
+  "WA29_40x30-1-1": {
+    "product": "Yellow Vogue",
+    "variant": "40x30",
+    "printful_variant_id": null
+  },
+  "WA29_80x60-1-1": {
+    "product": "Yellow Vogue",
+    "variant": "80x60",
+    "printful_variant_id": null
+  },
+  "WA27_90x60_CANVA-1": {
+    "product": "The Rider",
+    "variant": "canvas-80x60",
+    "printful_variant_id": null
+  },
+  "WA27_40x30_FRAMED-1": {
+    "product": "The Rider",
+    "variant": "framed-40x30",
+    "printful_variant_id": null
+  },
+  "WA27_80x60_FRAMED-1": {
+    "product": "The Rider",
+    "variant": "framed-80x60",
+    "printful_variant_id": null
+  },
+  "WA28-1": {
+    "product": "La Dame",
+    "variant": "canvas-80x80cm",
+    "printful_variant_id": null
+  },
+  "WA29_40x30-2": {
+    "product": "Femme Profile",
+    "variant": "40x30",
+    "printful_variant_id": null
+  },
+  "WA29_80x60-2": {
+    "product": "Femme Profile",
+    "variant": "80x60",
+    "printful_variant_id": null
+  },
+  "61A1428B42EC5": {
+    "product": "Rouge Mug",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "61A1308805A88": {
+    "product": "La Dame Mug",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "61A12BE85616F": {
+    "product": "Audrey Vogue Mug",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "61A127D25D2A7_18″x18″": {
+    "product": "Audrey Vogue Navy Cushion",
+    "variant": "18x18",
+    "printful_variant_id": null
+  },
+  "61A127D25D2A7_22″x22″": {
+    "product": "Audrey Vogue Navy Cushion",
+    "variant": "22x22",
+    "printful_variant_id": null
+  },
+  "61A1227042F06_18″x18″": {
+    "product": "Audrey Vogue Pink Cushion",
+    "variant": "18x18",
+    "printful_variant_id": null
+  },
+  "61A1227042F06_22″x22″": {
+    "product": "Audrey Vogue Pink Cushion",
+    "variant": "22x22",
+    "printful_variant_id": null
+  },
+  "61A110F44BAAD_22″x22″": {
+    "product": "Audrey Vogue cushion",
+    "variant": "22x22",
+    "printful_variant_id": null
+  },
+  "61A110F44BAAD_18″x18″": {
+    "product": "Audrey Vogue cushion",
+    "variant": "18x18",
+    "printful_variant_id": null
+  },
+  "ACC32": {
+    "product": "Pink Champagne Purse",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "WA38": {
+    "product": "Audrey Beige Purse",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "WA26_60x60-1-1-1-1-1-1": {
+    "product": "Audrey Funny Face III",
+    "variant": "square_600x600",
+    "printful_variant_id": null
+  },
+  "WA26_20X20-1-1-1-1-1-1": {
+    "product": "Audrey Funny Face III",
+    "variant": "square_200x200",
+    "printful_variant_id": null
+  },
+  "WA26_40x40-1-1-1-1-1-1": {
+    "product": "Audrey Funny Face III",
+    "variant": "square_400x400",
+    "printful_variant_id": null
+  },
+  "WA26_80x80-1-1-1-1-1-1": {
+    "product": "Audrey Funny Face III",
+    "variant": "square_800x800",
+    "printful_variant_id": null
+  },
+  "WA26_60x60-1-1-1-1-1": {
+    "product": "Audrey Funny Face",
+    "variant": "square_600x600",
+    "printful_variant_id": null
+  },
+  "WA26_20X20-1-1-1-1-1": {
+    "product": "Audrey Funny Face",
+    "variant": "square_200x200",
+    "printful_variant_id": null
+  },
+  "WA26_40x40-1-1-1-1-1": {
+    "product": "Audrey Funny Face",
+    "variant": "square_400x400",
+    "printful_variant_id": null
+  },
+  "WA26_80x80-1-1-1-1-1": {
+    "product": "Audrey Funny Face",
+    "variant": "square_800x800",
+    "printful_variant_id": null
+  },
+  "WA26_60x60-1-1-1-1": {
+    "product": "Audrey Funny Face – Pink",
+    "variant": "square_600x600",
+    "printful_variant_id": null
+  },
+  "WA26_20X20-1-1-1-1": {
+    "product": "Audrey Funny Face – Pink",
+    "variant": "square_200x200",
+    "printful_variant_id": null
+  },
+  "WA26_40x40-1-1-1-1": {
+    "product": "Audrey Funny Face – Pink",
+    "variant": "square_400x400",
+    "printful_variant_id": null
+  },
+  "WA26_80x80-1-1-1-1": {
+    "product": "Audrey Funny Face – Pink",
+    "variant": "square_800x800",
+    "printful_variant_id": null
+  },
+  "AC08": {
+    "product": "Audrey Black Purse",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "AC09": {
+    "product": "Audrey White Purse",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "AC07": {
+    "product": "Audrey Pink Purse",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "WA26_60x60-1-1-1": {
+    "product": "Audrey",
+    "variant": "square_600x600",
+    "printful_variant_id": null
+  },
+  "WA26_20X20-1-1-1": {
+    "product": "Audrey",
+    "variant": "square_200x200",
+    "printful_variant_id": null
+  },
+  "WA26_40x40-1-1-1": {
+    "product": "Audrey",
+    "variant": "square_400x400",
+    "printful_variant_id": null
+  },
+  "WA26_80x80-1-1-1": {
+    "product": "Audrey",
+    "variant": "square_800x800",
+    "printful_variant_id": null
+  },
+  "WA26_60x60-1-1": {
+    "product": "Audrey Vogue Red",
+    "variant": "square_600x600",
+    "printful_variant_id": null
+  },
+  "WA26_20X20-1-1": {
+    "product": "Audrey Vogue Red",
+    "variant": "square_200x200",
+    "printful_variant_id": null
+  },
+  "WA26_40x40-1-1": {
+    "product": "Audrey Vogue Red",
+    "variant": "square_400x400",
+    "printful_variant_id": null
+  },
+  "WA26_80x80-1-1": {
+    "product": "Audrey Vogue Red",
+    "variant": "square_800x800",
+    "printful_variant_id": null
+  },
+  "WA26_60x60-1": {
+    "product": "Audrey Vogue Pink",
+    "variant": "square_600x600",
+    "printful_variant_id": null
+  },
+  "WA26_20X20-1": {
+    "product": "Audrey Vogue Pink",
+    "variant": "square_200x200",
+    "printful_variant_id": null
+  },
+  "WA26_40x40-1": {
+    "product": "Audrey Vogue Pink",
+    "variant": "square_400x400",
+    "printful_variant_id": null
+  },
+  "WA26_80x80-1": {
+    "product": "Audrey Vogue Pink",
+    "variant": "square_800x800",
+    "printful_variant_id": null
+  },
+  "AC06": {
+    "product": "The Rider purse – black",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "AC05": {
+    "product": "The Rider purse – brown",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "AC04": {
+    "product": "The Rider purse – beige",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "AC03": {
+    "product": "Vogue Karlie Purse",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "AC-02": {
+    "product": "Vogue Purse",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "CL01-BlackS": {
+    "product": "Catwalk Sweatshirt",
+    "variant": "S",
+    "printful_variant_id": null
+  },
+  "CL01-BlackM": {
+    "product": "Catwalk Sweatshirt",
+    "variant": "M",
+    "printful_variant_id": null
+  },
+  "CL01-BlackL": {
+    "product": "Catwalk Sweatshirt",
+    "variant": "L",
+    "printful_variant_id": null
+  },
+  "CL01-BlackXL": {
+    "product": "Catwalk Sweatshirt",
+    "variant": "XL",
+    "printful_variant_id": null
+  },
+  "CL01-BlackXXL": {
+    "product": "Catwalk Sweatshirt",
+    "variant": "2XL",
+    "printful_variant_id": null
+  },
+  "CL01-WhiteS": {
+    "product": "Catwalk Sweatshirt",
+    "variant": "S",
+    "printful_variant_id": null
+  },
+  "CL01-WhiteM": {
+    "product": "Catwalk Sweatshirt",
+    "variant": "M",
+    "printful_variant_id": null
+  },
+  "CL01-WhiteL": {
+    "product": "Catwalk Sweatshirt",
+    "variant": "L",
+    "printful_variant_id": null
+  },
+  "CL01-WhiteXL": {
+    "product": "Catwalk Sweatshirt",
+    "variant": "XL",
+    "printful_variant_id": null
+  },
+  "CL01-WhiteXXL": {
+    "product": "Catwalk Sweatshirt",
+    "variant": "2XL",
+    "printful_variant_id": null
+  },
+  "WA26_60x60": {
+    "product": "Rouge Doux",
+    "variant": "square_600x600",
+    "printful_variant_id": null
+  },
+  "WA26_20X20": {
+    "product": "Rouge Doux",
+    "variant": "square_200x200",
+    "printful_variant_id": null
+  },
+  "WA26_40x40": {
+    "product": "Rouge Doux",
+    "variant": "square_400x400",
+    "printful_variant_id": null
+  },
+  "WA26_80x80": {
+    "product": "Rouge Doux",
+    "variant": "square_800x800",
+    "printful_variant_id": null
+  },
+  "WA25_60x60": {
+    "product": "Revenge",
+    "variant": "square_600x600",
+    "printful_variant_id": null
+  },
+  "WA25_20X20": {
+    "product": "Revenge",
+    "variant": "square_200x200",
+    "printful_variant_id": null
+  },
+  "WA25_40x40": {
+    "product": "Revenge",
+    "variant": "square_400x400",
+    "printful_variant_id": null
+  },
+  "WA25_80x80": {
+    "product": "Revenge",
+    "variant": "square_800x800",
+    "printful_variant_id": null
+  },
+  "WA01_60x60": {
+    "product": "Rouge",
+    "variant": "square_600x600",
+    "printful_variant_id": null
+  },
+  "WA01_20X20": {
+    "product": "Rouge",
+    "variant": "square_200x200",
+    "printful_variant_id": null
+  },
+  "WA01_40x40": {
+    "product": "Rouge",
+    "variant": "square_400x400",
+    "printful_variant_id": null
+  },
+  "WA01_80x80": {
+    "product": "Rouge",
+    "variant": "square_800x800",
+    "printful_variant_id": null
+  },
+  "WA23_20x20": {
+    "product": "Walk in colors",
+    "variant": "square_200x200",
+    "printful_variant_id": null
+  },
+  "WA23_40x40": {
+    "product": "Walk in colors",
+    "variant": "square_400x400",
+    "printful_variant_id": null
+  },
+  "WA23_80x80": {
+    "product": "Walk in colors",
+    "variant": "square_800x800",
+    "printful_variant_id": null
+  },
+  "WA22_60x60": {
+    "product": "Walk in green",
+    "variant": "square_600x600",
+    "printful_variant_id": null
+  },
+  "WA22_20x20": {
+    "product": "Walk in green",
+    "variant": "square_200x200",
+    "printful_variant_id": null
+  },
+  "WA22_40x40": {
+    "product": "Walk in green",
+    "variant": "square_400x400",
+    "printful_variant_id": null
+  },
+  "WA22_80x80": {
+    "product": "Walk in green",
+    "variant": "square_800x800",
+    "printful_variant_id": null
+  },
+  "WA21_60x60": {
+    "product": "Walk in blue",
+    "variant": "square_600x600",
+    "printful_variant_id": null
+  },
+  "WA21_40x40": {
+    "product": "Walk in blue",
+    "variant": "square_400x400",
+    "printful_variant_id": null
+  },
+  "WA21_80x80": {
+    "product": "Walk in blue",
+    "variant": "square_800x800",
+    "printful_variant_id": null
+  },
+  "WA21_20x20": {
+    "product": "Walk in blue",
+    "variant": "square_200x200",
+    "printful_variant_id": null
+  },
+  "WA20_60x60": {
+    "product": "Walk in yellow",
+    "variant": "square_600x600",
+    "printful_variant_id": null
+  },
+  "WA20_20x20": {
+    "product": "Walk in yellow",
+    "variant": "square_200x200",
+    "printful_variant_id": null
+  },
+  "WA20_40x40": {
+    "product": "Walk in yellow",
+    "variant": "square_400x400",
+    "printful_variant_id": null
+  },
+  "WA20_80x80": {
+    "product": "Walk in yellow",
+    "variant": "square_800x800",
+    "printful_variant_id": null
+  },
+  "WA19_60x60": {
+    "product": "Walk in red",
+    "variant": "square_600x600",
+    "printful_variant_id": null
+  },
+  "WA19_20x20": {
+    "product": "Walk in red",
+    "variant": "square_200x200",
+    "printful_variant_id": null
+  },
+  "WA19_80x80": {
+    "product": "Walk in red",
+    "variant": "square_800x800",
+    "printful_variant_id": null
+  },
+  "WA19_40x40": {
+    "product": "Walk in red",
+    "variant": "square_400x400",
+    "printful_variant_id": null
+  },
+  "WA_17-1-1": {
+    "product": "Blue diamonds",
+    "variant": "giclee_print",
+    "printful_variant_id": null
+  },
+  "WA_17-1": {
+    "product": "Bonjour Paris",
+    "variant": "giclee_print",
+    "printful_variant_id": null
+  },
+  "WA_17": {
+    "product": "Pink Champagne",
+    "variant": "giclee_print",
+    "printful_variant_id": null
+  },
+  "WA_14-2-1": {
+    "product": "Dolce Vita",
+    "variant": "square_800x800",
+    "printful_variant_id": null
+  },
+  "WA_14-2": {
+    "product": "Martini time",
+    "variant": "square_800x800",
+    "printful_variant_id": null
+  },
+  "WA_07": {
+    "product": "Kiss of Darkness",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "WA10": {
+    "product": "Seduction",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "WA13": {
+    "product": "Madmoiselle",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "WA12": {
+    "product": "The Wave II",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "WA_10": {
+    "product": "Chanel Nº5 Parfum",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "WA06DUO": {
+    "product": "DUO Catwalk",
+    "variant": "a1",
+    "printful_variant_id": null
+  },
+  "CUSTOM": {
+    "product": "Customized",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "WA05": {
+    "product": "Sensuality",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "WA11": {
+    "product": "The Wave",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "WA02": {
+    "product": "Introspective",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "WA09": {
+    "product": "Le Couture II",
+    "variant": "giclee_print",
+    "printful_variant_id": null
+  },
+  "WA08": {
+    "product": "Le Couture I",
+    "variant": "giclee_print",
+    "printful_variant_id": null
+  },
+  "WA03": {
+    "product": "Chic Air",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "WA04": {
+    "product": "Ethereal Air",
+    "variant": null,
+    "printful_variant_id": null
+  },
+  "": {
+    "product": "Poster Lifestyle Girl Saint Tropez",
+    "variant": null,
+    "printful_variant_id": null
+  }
+}

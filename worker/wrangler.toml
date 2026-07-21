@@ -1,0 +1,7 @@
+name = "elizabetharnau-printful-bridge"
+main = "src/index.js"
+compatibility_date = "2026-01-01"
+
+# After deploying, set the two required secrets:
+#   wrangler secret put SNIPCART_API_KEY
+#   wrangler secret put PRINTFUL_API_KEY
