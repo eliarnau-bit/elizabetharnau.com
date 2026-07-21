@@ -1,0 +1,148 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: products
+  size: 1
+  alias: product
+permalink: "/product/{{ product.slug }}/index.html"
+eleventyComputed:
+  title: "{{ product.name }}"
+  description: "{{ product.name }} - {{ product.category }} by Elizabeth Arnau."
+scripts:
+  - jquery.min.js
+---
+<div class="ea-product">
+  <div class="ea-product-gallery">
+    {% for image in product.images %}
+    <img loading="lazy" src="/assets/images/products/{{ image }}" alt="{{ product.name }}" class="ea-product-image{% if loop.first %} ea-product-image-main{% endif %}">
+    {% endfor %}
+  </div>
+  <div class="ea-product-info">
+    <p class="ea-product-category">{{ product.category }}</p>
+    <h1 class="ea-product-title">{{ product.name }}</h1>
+
+    {% if product.type == "variable" %}
+      <p class="ea-product-price price">
+        <span class="woocommerce-Price-amount amount">{{ product.currency }}{{ product.price_min }}</span>
+        &ndash;
+        <span class="woocommerce-Price-amount amount">{{ product.currency }}{{ product.price_max }}</span>
+      </p>
+      <div class="ea-product-description">{{ product.short_description | safe }}</div>
+      <div class="ea-product-variations">
+        <p class="ea-variations-label">Choose a size:</p>
+        {% for v in product.variations %}
+        <div class="ea-variation-row">
+          <span class="ea-variation-name">{% for attr in v.attributes %}{{ attr.value }}{% if not loop.last %}, {% endif %}{% endfor %}</span>
+          <span class="ea-variation-price">{{ product.currency }}{{ v.price }}</span>
+          <button
+            class="snipcart-add-item button"
+            data-item-id="{{ v.sku }}"
+            data-item-price="{{ v.price }}"
+            data-item-url="/product/{{ product.slug }}/"
+            data-item-name="{{ product.name }} ({% for attr in v.attributes %}{{ attr.value }}{% endfor %})"
+            data-item-image="/assets/images/products/{{ product.images[0] }}"
+          >Add to cart</button>
+        </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="ea-product-price price">
+        <span class="woocommerce-Price-amount amount">{{ product.currency }}{{ product.price_min }}</span>
+      </p>
+      <div class="ea-product-description">{{ product.short_description | safe }}</div>
+      <button
+        class="snipcart-add-item button ea-add-to-cart"
+        data-item-id="{{ product.sku }}"
+        data-item-price="{{ product.price_min }}"
+        data-item-url="/product/{{ product.slug }}/"
+        data-item-name="{{ product.name }}"
+        data-item-image="/assets/images/products/{{ product.images[0] }}"
+      >Add to cart</button>
+    {% endif %}
+
+    <p class="ea-back-to-shop"><a href="/shop/">&larr; Back to Shop</a></p>
+  </div>
+</div>
+
+<style>
+.ea-product{
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.ea-product-gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  align-content: start;
+}
+.ea-product-image-main{
+  grid-column: 1 / -1;
+}
+.ea-product-gallery img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.ea-product-category{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #72c5e9;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+}
+.ea-product-title{
+  margin-top: 0;
+}
+.ea-product-price{
+  font-size: 1.4rem;
+  margin-bottom: 24px;
+}
+.ea-product-description{
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+.ea-product-description ul{
+  padding-left: 20px;
+}
+.ea-variations-label{
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.ea-variation-row{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.ea-variation-name{
+  min-width: 90px;
+}
+.ea-variation-price{
+  flex-grow: 1;
+  color: #72c5e9;
+  font-weight: 700;
+}
+.ea-add-to-cart{
+  padding: 14px 32px;
+  cursor: pointer;
+  border: none;
+}
+.ea-back-to-shop{
+  margin-top: 32px;
+}
+.ea-back-to-shop a{
+  color: #54595f;
+  text-decoration: none;
+}
+@media (max-width: 800px){
+  .ea-product{
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
+</style>

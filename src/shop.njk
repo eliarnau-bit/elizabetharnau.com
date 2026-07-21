@@ -1,0 +1,80 @@
+---
+layout: layouts/base.njk
+title: "Shop"
+description: "Shop original wall art, home decor, and accessories by Elizabeth Arnau."
+permalink: /shop/index.html
+scripts:
+  - jquery.min.js
+---
+<div class="ea-shop">
+  <h1 class="ea-shop-title">Shop</h1>
+
+  {% for group in categories %}
+    <section class="ea-shop-category">
+      <h2 class="ea-shop-category-title">{{ group.name }}</h2>
+      <div class="ea-shop-grid">
+        {% for product in group.products %}
+        <a class="ea-shop-item" href="/product/{{ product.slug }}/">
+          <img loading="lazy" src="/assets/images/products/{{ product.images[0] }}" alt="{{ product.name }}">
+          <p class="ea-shop-item-name">{{ product.name }}</p>
+          <p class="ea-shop-item-price price">
+            {% if product.type == "variable" %}
+            <span class="woocommerce-Price-amount amount">{{ product.currency }}{{ product.price_min }} &ndash; {{ product.currency }}{{ product.price_max }}</span>
+            {% else %}
+            <span class="woocommerce-Price-amount amount">{{ product.currency }}{{ product.price_min }}</span>
+            {% endif %}
+          </p>
+        </a>
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+</div>
+
+<style>
+.ea-shop{
+  padding: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.ea-shop-title{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.ea-shop-category-title{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 24px;
+}
+.ea-shop-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.ea-shop-item{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.ea-shop-item img{
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 10px;
+}
+.ea-shop-item-name{
+  margin: 0;
+  font-weight: 600;
+  color: #54595f;
+}
+.ea-shop-item-price{
+  margin: 4px 0 0;
+}
+@media (max-width: 600px){
+  .ea-shop{ padding: 20px; }
+}
+</style>

@@ -11,6 +11,9 @@
 <meta property="og:image" content="/assets/images/2020/05/LOGO_ES-sinFondo.png">
 <link rel="icon" href="/assets/images/2020/04/favicon-Icono.png">
 <link rel="stylesheet" href="/assets/css/style.css">
+<link rel="preconnect" href="https://app.snipcart.com">
+<link rel="preconnect" href="https://cdn.snipcart.com">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.7.1/default/snipcart.css">
 {% block head %}{% endblock %}
 </head>
 <body class="wp-singular page elementor-page elementor-kit-24{% if bodyClass %} {{ bodyClass }}{% endif %}">
@@ -25,5 +28,7 @@
 <script defer src="/assets/js/{{ js }}"></script>
 {% endfor %}
 {% block scripts %}{% endblock %}
+<div hidden id="snipcart" data-api-key="{{ snipcart.publicApiKey }}" data-config-modal-style="side"></div>
+<script async src="https://cdn.snipcart.com/themes/v3.7.1/default/snipcart.js"></script>
 </body>
 </html>
