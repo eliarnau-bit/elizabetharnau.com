@@ -1,11 +1,11 @@
-// Until the custom domain (elizabetharnau.com) is live, GitHub Pages serves
-// this repo as a project site under /elizabetharnau.com/, not at root. Once
-// DNS cutover happens (see migration plan Phase 6) and a CNAME file is added,
-// set PATH_PREFIX to "/" (or unset it) so assets resolve at the domain root.
-const pathPrefix = process.env.PATH_PREFIX || "/elizabetharnau.com/";
+// The custom domain (elizabetharnau.com) is the production target: assets
+// and links resolve from the domain root. If this site is ever previewed
+// again under a GitHub Pages project-site subpath, override PATH_PREFIX.
+const pathPrefix = process.env.PATH_PREFIX || "/";
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
+  eleventyConfig.addPassthroughCopy({ "src/CNAME": "CNAME" });
 
   // Two problems with links carried over from the WordPress mirror:
   // 1. Nav/footer/content links point at the live elizabetharnau.com site
