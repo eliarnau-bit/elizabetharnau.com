@@ -226,3 +226,8 @@ html:not(.vp-lazyload-enabled):not(.js) .vp-lazyload{display:none}
   font-size: 18px;
 }
 
+.widget-image-caption{
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+}
+
