@@ -212,3 +212,13 @@ html:not(.vp-lazyload-enabled):not(.js) .vp-lazyload{display:none}
   white-space: nowrap;
 }
 
+/* ART/FASHION dropdown was rendering behind the BIO hero carousel below it */
+.elementskit-navbar-nav-default,
+.elementskit-menu-container{
+  position: relative;
+  z-index: 100000 !important;
+}
+.elementskit-dropdown{
+  z-index: 100001 !important;
+}
+
