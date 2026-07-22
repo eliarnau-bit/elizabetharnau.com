@@ -22,6 +22,14 @@ module.exports = function (eleventyConfig) {
       /(href|data-item-url)="https?:\/\/(www\.)?elizabetharnau\.com/g,
       '$1="'
     );
+    // The WordPress mirror's portfolio galleries lazy-load images via
+    // lazysizes: a blank SVG data-URI sits in srcset until that library
+    // swaps in the real one (from data-srcset) on scroll. lazysizes never
+    // initializes here, so images are stuck on the blank placeholder -
+    // drop the placeholder srcset/sizes so the browser just uses the real
+    // (already-correct) src instead.
+    content = content.replace(/\s*srcset="data:image\/svg\+xml[^"]*"/g, "");
+    content = content.replace(/\s*sizes="auto"/g, "");
     if (pathPrefix !== "/") {
       content = content
         .replace(/(href|src|data-item-url)="\//g, `$1="${pathPrefix}`)
