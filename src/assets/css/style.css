@@ -222,3 +222,7 @@ html:not(.vp-lazyload-enabled):not(.js) .vp-lazyload{display:none}
   z-index: 100001 !important;
 }
 
+.elementor-element-aafb4e7 p{
+  font-size: 18px;
+}
+
