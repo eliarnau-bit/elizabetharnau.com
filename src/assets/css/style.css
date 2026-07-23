@@ -221,6 +221,16 @@ html:not(.vp-lazyload-enabled):not(.js) .vp-lazyload{display:none}
 .elementskit-dropdown{
   z-index: 100001 !important;
 }
+/* Stacking must also be pinned at the widget level (nav vs carousel are
+   siblings) or the deep z-index above gets painted behind the carousel. */
+.elementor-element-f9e85ef{
+  position: relative;
+  z-index: 100000 !important;
+}
+.elementor-element-27e53a4{
+  position: relative;
+  z-index: 1 !important;
+}
 
 .elementor-element-aafb4e7 p{
   font-size: 18px;
@@ -235,4 +245,5 @@ html:not(.vp-lazyload-enabled):not(.js) .vp-lazyload{display:none}
 .ea-contact-title,
 .ea-shop-title,
 .ea-shop-category-title{ font-size: 24px; }
+.ea-contact-title{ margin-bottom: 30px; }
 
