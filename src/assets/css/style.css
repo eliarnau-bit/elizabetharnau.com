@@ -231,11 +231,6 @@ html:not(.vp-lazyload-enabled):not(.js) .vp-lazyload{display:none}
   line-height: 1.6 !important;
 }
 
-.elementor-29 .elementor-element.elementor-element-f9e85ef .elementskit-navbar-nav>li>a{
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 23px;
-}
-
 .elementor-widget-heading .elementor-heading-title{ font-size: 24px !important; }
 .ea-contact-title,
 .ea-shop-title,
