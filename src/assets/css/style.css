@@ -236,3 +236,8 @@ html:not(.vp-lazyload-enabled):not(.js) .vp-lazyload{display:none}
   font-size: 27px;
 }
 
+.elementor-widget-heading .elementor-heading-title{ font-size: 24px !important; }
+.ea-contact-title,
+.ea-shop-title,
+.ea-shop-category-title{ font-size: 24px; }
+
