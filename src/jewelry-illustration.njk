@@ -17,7 +17,7 @@ scripts:
 <style>
 .art-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding: 20px 40px 60px;
 }
@@ -28,7 +28,7 @@ scripts:
   display: block;
 }
 @media (max-width: 600px){
-  .art-grid{ padding: 20px; }
+  .art-grid{ padding: 20px; grid-template-columns: 1fr; }
 }
 </style>
 {% include "partials/art-lightbox.html" %}
