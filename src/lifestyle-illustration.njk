@@ -8,7 +8,6 @@ scripts:
   - ekit-nav-menu.js
 ---
 <div class="art-grid">
-<a href="/assets/images/2020/05/blue_mercedes_car_elizabeth_arnau_lw-1.jpg"><img src="/assets/images/2020/05/blue_mercedes_car_elizabeth_arnau_lw-1.jpg" alt="convertible mercedes"></a>
 <a href="/assets/images/2020/05/Lifestyle5.jpg"><img src="/assets/images/2020/05/Lifestyle5.jpg" alt=""></a>
 <a href="/assets/images/2020/05/Lifestyle9.jpg"><img src="/assets/images/2020/05/Lifestyle9.jpg" alt=""></a>
 <a href="/assets/images/2020/05/Lifestyle6.jpg"><img src="/assets/images/2020/05/Lifestyle6.jpg" alt=""></a>
@@ -33,6 +32,7 @@ scripts:
 <a href="/assets/images/2020/09/NYE_ElizabethArnau.jpg"><img src="/assets/images/2020/09/NYE_ElizabethArnau.jpg" alt=""></a>
 <a href="/assets/images/2020/09/RedXmas_ElizabethArnau.jpg"><img src="/assets/images/2020/09/RedXmas_ElizabethArnau.jpg" alt=""></a>
 <a href="/assets/images/2020/09/Swarovski_Xmas2_ElizabethArnau-1.jpg"><img src="/assets/images/2020/09/Swarovski_Xmas2_ElizabethArnau-1.jpg" alt=""></a>
+<a class="art-grid-last-centered" href="/assets/images/2020/05/blue_mercedes_car_elizabeth_arnau_lw-1.jpg"><img src="/assets/images/2020/05/blue_mercedes_car_elizabeth_arnau_lw-1.jpg" alt="convertible mercedes"></a>
 </div>
 
 <style>
@@ -43,6 +43,12 @@ scripts:
   padding: 20px 40px 60px;
 }
 .art-grid a{ display: block; }
+.art-grid-last-centered{
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 100%;
+  max-width: 340px;
+}
 .art-grid img{
   width: 100%;
   height: auto;
