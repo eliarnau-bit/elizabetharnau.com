@@ -247,3 +247,8 @@ html:not(.vp-lazyload-enabled):not(.js) .vp-lazyload{display:none}
 .ea-shop-category-title{ font-size: 24px; }
 .ea-contact-title{ margin-bottom: 30px; }
 
+/* Instagram icon in main nav, next to CONTACT */
+.ea-nav-social-item{ flex-shrink: 0; }
+.ea-nav-social-link{ display: inline-flex !important; align-items: center; flex-shrink: 0; }
+.ea-nav-social-icon{ height: 18px; width: 18px; min-width: 18px; flex-shrink: 0; object-fit: contain; }
+
