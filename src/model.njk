@@ -39,6 +39,7 @@ scripts:
     <div class="model-popup-gallery">
       <img src="/assets/images/2026/09/compcard.jpg" alt="Elizabeth Arnau comp card">
     </div>
+    <a class="model-popup-download" href="/assets/images/2026/09/compcard.jpg" download="Elizabeth-Arnau-Compcard.jpg">Download full size</a>
   </div>
 </div>
 <div class="art-grid">
@@ -176,6 +177,30 @@ scripts:
   width: 100%;
   height: auto;
   display: block;
+}
+.model-popup-gallery img:only-child{
+  grid-column: 1 / -1;
+}
+.model-popup-download{
+  display: block;
+  width: fit-content;
+  margin: 24px auto 0;
+  font-family: Raleway, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #54595f;
+  border: 1px solid #54595f;
+  padding: 10px 24px;
+  text-decoration: none;
+  transition: color .2s ease, border-color .2s ease;
+}
+.model-popup-download:hover,
+.model-popup-download:focus-visible{
+  color: #88bec1;
+  border-color: #88bec1;
+  outline: none;
 }
 .model-popup-close{
   position: absolute;
