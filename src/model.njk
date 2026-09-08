@@ -29,7 +29,11 @@ scripts:
   <div class="model-popup-inner">
     <button type="button" class="model-popup-close" aria-label="Close">&times;</button>
     <h3 class="model-popup-title">Videowalk</h3>
-    <div class="model-popup-gallery"></div>
+    <div class="model-popup-gallery">
+      <video controls playsinline preload="metadata"><source src="/assets/videos/2026/09/videowalk-1.mp4" type="video/mp4"></video>
+      <video controls playsinline preload="metadata"><source src="/assets/videos/2026/09/videowalk-2.mp4" type="video/mp4"></video>
+      <video controls playsinline preload="metadata"><source src="/assets/videos/2026/09/videowalk-3.mp4" type="video/mp4"></video>
+    </div>
   </div>
 </div>
 <div class="model-popup" id="model-popup-compcard" hidden>
@@ -173,12 +177,14 @@ scripts:
   gap: 16px;
   min-height: 80px;
 }
-.model-popup-gallery img{
+.model-popup-gallery img,
+.model-popup-gallery video{
   width: 100%;
   height: auto;
   display: block;
 }
-.model-popup-gallery img:only-child{
+.model-popup-gallery img:only-child,
+.model-popup-gallery video:only-child{
   grid-column: 1 / -1;
 }
 .model-popup-download{
