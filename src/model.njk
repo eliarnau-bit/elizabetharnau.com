@@ -11,6 +11,33 @@ scripts:
 <h2 style="font-family: Raleway, sans-serif; font-size: 24px; color: #54595f; font-weight: 400; text-transform: uppercase; letter-spacing: normal; margin: 0 0 16px;">International Model &amp; Actress</h2>
 <p style="font-size: 18px; line-height: 1.6; color: #54595f; margin: 0;">Height 176cm &middot; 85-66-92 &middot; Clothing size: S &middot; Shoe size: 40 &middot; Hair &amp; Eyes: brown</p>
 <p style="font-size: 18px; line-height: 1.6; color: #54595f; margin: 0;">Languages: Spanish &middot; Catalan &middot; English &middot; French</p>
+<div class="model-popup-buttons">
+<button type="button" class="model-popup-btn" data-popup="polaroids">Polaroids</button>
+<button type="button" class="model-popup-btn" data-popup="videowalk">Videowalk</button>
+<button type="button" class="model-popup-btn" data-popup="compcard">Compcard</button>
+</div>
+</div>
+
+<div class="model-popup" id="model-popup-polaroids" hidden>
+  <div class="model-popup-inner">
+    <button type="button" class="model-popup-close" aria-label="Close">&times;</button>
+    <h3 class="model-popup-title">Polaroids</h3>
+    <div class="model-popup-gallery"></div>
+  </div>
+</div>
+<div class="model-popup" id="model-popup-videowalk" hidden>
+  <div class="model-popup-inner">
+    <button type="button" class="model-popup-close" aria-label="Close">&times;</button>
+    <h3 class="model-popup-title">Videowalk</h3>
+    <div class="model-popup-gallery"></div>
+  </div>
+</div>
+<div class="model-popup" id="model-popup-compcard" hidden>
+  <div class="model-popup-inner">
+    <button type="button" class="model-popup-close" aria-label="Close">&times;</button>
+    <h3 class="model-popup-title">Compcard</h3>
+    <div class="model-popup-gallery"></div>
+  </div>
 </div>
 <div class="art-grid">
 <a href="/assets/images/2026/01/portfoli5.jpg"><img src="/assets/images/2026/01/portfoli5.jpg" alt="Robb Report press feature"></a>
@@ -80,5 +107,109 @@ scripts:
 @media (max-width: 600px){
   .art-grid{ padding: 20px; }
 }
+
+.model-popup-buttons{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 20px 0 0;
+}
+.model-popup-btn{
+  font-family: Raleway, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #54595f;
+  background: none;
+  border: 1px solid #54595f;
+  padding: 10px 26px;
+  cursor: pointer;
+  transition: color .2s ease, border-color .2s ease;
+}
+.model-popup-btn:hover,
+.model-popup-btn:focus-visible{
+  color: #88bec1;
+  border-color: #88bec1;
+  outline: none;
+}
+.model-popup{
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 40px 20px;
+}
+.model-popup[hidden]{ display: none; }
+.model-popup-inner{
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #fff;
+  padding: 40px;
+}
+.model-popup-title{
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #54595f;
+  text-align: center;
+  margin: 0 0 24px;
+}
+.model-popup-gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  min-height: 80px;
+}
+.model-popup-gallery img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.model-popup-close{
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #54595f;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.model-popup-close:hover{ color: #88bec1; }
+@media (max-width: 600px){
+  .model-popup-inner{ padding: 24px; }
+}
 </style>
 {% include "partials/art-lightbox.html" %}
+
+<script>
+(function(){
+  document.querySelectorAll(".model-popup-btn").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var popup = document.getElementById("model-popup-" + btn.getAttribute("data-popup"));
+      if (popup) popup.hidden = false;
+    });
+  });
+  document.querySelectorAll(".model-popup").forEach(function(popup){
+    function hide(){ popup.hidden = true; }
+    popup.querySelector(".model-popup-close").addEventListener("click", hide);
+    popup.addEventListener("click", function(e){
+      if (e.target === popup) hide();
+    });
+    document.addEventListener("keydown", function(e){
+      if (!popup.hidden && e.key === "Escape") hide();
+    });
+  });
+})();
+</script>
