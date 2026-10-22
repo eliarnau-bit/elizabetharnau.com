@@ -19,7 +19,8 @@ module.exports = function (eleventyConfig) {
       return content;
     }
     content = content.replace(
-      /(href|data-item-url)="https?:\/\/(www\.)?elizabetharnau\.com/g,
+      // (canonical tags must stay absolute, so they're left alone)
+      /(?<!rel="canonical" )(href|data-item-url)="https?:\/\/(www\.)?elizabetharnau\.com/g,
       '$1="'
     );
     // The WordPress mirror's portfolio galleries lazy-load images via
