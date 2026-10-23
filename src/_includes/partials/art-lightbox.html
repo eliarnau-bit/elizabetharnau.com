@@ -52,9 +52,7 @@
 </style>
 <script>
 (function(){
-  var grid = document.querySelector(".art-grid");
-  if (!grid) return;
-  var links = Array.prototype.slice.call(grid.querySelectorAll("a"));
+  var links = Array.prototype.slice.call(document.querySelectorAll(".art-grid a"));
   if (!links.length) return;
 
   var lightbox = document.getElementById("art-lightbox");
