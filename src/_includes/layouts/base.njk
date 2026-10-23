@@ -18,6 +18,14 @@
 <meta name="twitter:image" content="https://elizabetharnau.com/assets/images/share/og.jpg">
 <link rel="icon" href="/assets/images/2020/04/favicon-Icono.png">
 <link rel="stylesheet" href="/assets/css/style.css?v=20260908b">
+<style>
+/* Keep the main menu on one line on narrower desktop windows (FASHION DESIGNER is a long label):
+   letters and spacing shrink smoothly below ~1230px and the hamburger menu still takes over at 1024px. */
+@media (min-width: 1025px) and (max-width: 1230px){
+  #menu-main-about{ gap: clamp(10px, 1.6vw, 20px); }
+  #menu-main-about > li > a{ font-size: clamp(17px, 1.9vw, 23px); }
+}
+</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap">
