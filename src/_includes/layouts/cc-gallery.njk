@@ -1,0 +1,37 @@
+---
+layout: layouts/base.njk
+scripts:
+  - jquery.min.js
+  - ekit-nav-menu.js
+---
+<div style="width: 100%; text-align: center; margin: 40px auto 40px; padding: 0 20px;">
+<p style="margin: 0 0 12px;"><a href="/content-creation/" style="font-family: Raleway, sans-serif; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; color: #54595f; text-decoration: none;">&larr; Content Creation</a></p>
+<h2 style="font-family: Raleway, sans-serif; font-size: 24px; color: #54595f; font-weight: 400; text-transform: uppercase; letter-spacing: normal; margin: 0;">{{ category }}</h2>
+</div>
+{% if video %}
+<div style="width: 100%; max-width: 620px; margin: 0 auto 40px; padding: 0 20px;">
+<video controls playsinline preload="metadata" poster="{{ video.poster }}" style="width: 100%; display: block; border-radius: 3px; box-shadow: 0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.15);">
+<source src="{{ video.src }}" type="video/mp4">
+</video>
+</div>
+{% endif %}
+{% if featured %}
+<div style="width: 100%; max-width: 1000px; margin: 0 auto 40px; padding: 0 20px;">
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/{{ featured }}/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px auto; max-width:1000px; min-width:326px; padding:0; width:100%;">
+<a href="https://www.instagram.com/p/{{ featured }}/" target="_blank"></a>
+</blockquote>
+</div>
+{% endif %}
+{% if reels %}
+<div style="width: 100%; max-width: 1200px; margin: 0 auto 60px; padding: 0 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+{%- for id in reels %}
+<div style="width: 100%; max-width: 340px;">
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/{{ id }}/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px auto; max-width:340px; min-width:326px; padding:0; width:100%;">
+<a href="https://www.instagram.com/p/{{ id }}/" target="_blank"></a>
+</blockquote>
+</div>
+{%- endfor %}
+</div>
+{% endif %}
+{% if featured or reels %}<script async src="https://www.instagram.com/embed.js"></script>{% endif %}
+{{ content | safe }}
