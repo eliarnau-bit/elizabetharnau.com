@@ -15,15 +15,17 @@ scripts:
 <a class="cc-cover" href="/content-creation/lifestyle/"><img src="/assets/images/2026/09/content-creation-lifestyle.jpg" alt="Lifestyle content by Elizabeth Arnau"><span>Lifestyle</span></a>
 <a class="cc-cover" href="/content-creation/fashion/"><img src="/assets/images/2026/09/content-creation-fashion.jpg" alt="Fashion content by Elizabeth Arnau" style="object-position: center 25%;"><span>Fashion</span></a>
 <a class="cc-cover" href="/content-creation/beauty/"><img src="/assets/images/2026/09/content-creation-beauty.jpg" alt="Beauty content by Elizabeth Arnau"><span>Beauty</span></a>
+<a class="cc-cover" href="/content-creation/media-kit/"><img src="/assets/images/2026/11/ElizabethArnau_MediaKit.jpg" alt="Elizabeth Arnau media kit" style="object-position: center top;"><span>Media Kit</span></a>
 </div>
 <style>
-.cc-covers { max-width: 1100px; margin: 0 auto 60px; padding: 0 20px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.cc-covers { max-width: 1440px; margin: 0 auto 60px; padding: 0 20px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 .cc-cover { position: relative; display: block; aspect-ratio: 2 / 3; overflow: hidden; border-radius: 3px; text-decoration: none; }
 .cc-cover img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .6s ease; }
 .cc-cover::after { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,.18); transition: background .4s ease; }
 .cc-cover span { position: absolute; left: 0; right: 0; bottom: 28px; z-index: 1; text-align: center; color: #fff; font-family: Raleway, sans-serif; font-size: 22px; letter-spacing: 4px; text-transform: uppercase; }
 .cc-cover:hover img { transform: scale(1.04); }
 .cc-cover:hover::after { background: rgba(0,0,0,.30); }
+@media (max-width: 991px) { .cc-covers { grid-template-columns: repeat(2, 1fr); max-width: 640px; } }
 @media (max-width: 767px) { .cc-covers { grid-template-columns: 1fr; max-width: 420px; } .cc-cover { aspect-ratio: 4 / 5; } }
 </style>
 <div style="width: 100%; max-width: 1000px; margin: 0 auto 60px;"><img src="/assets/images/2026/01/ClientsandPartnerships.jpg" alt="Clients &amp; Partnerships" style="width:100%; height:auto; display:block;" loading="lazy"></div>
