@@ -33,5 +33,23 @@ scripts:
 {%- endfor %}
 </div>
 {% endif %}
+{% if covers %}
+<div class="cc-reel-covers">
+{%- for c in covers %}
+{%- if c.type == "video" %}
+<div class="cc-reel-cover"><video controls playsinline preload="metadata" poster="{{ c.poster }}"><source src="{{ c.src }}" type="video/mp4"></video></div>
+{%- else %}
+<a class="cc-reel-cover" href="https://www.instagram.com/p/{{ c.id }}/" target="_blank" rel="noopener"><img src="{{ c.thumb }}" alt="{{ category }} content by Elizabeth Arnau" loading="lazy"><span class="cc-reel-play">&#9654;</span></a>
+{%- endif %}
+{%- endfor %}
+</div>
+<style>
+.cc-reel-covers { max-width: 1100px; margin: 0 auto 60px; padding: 0 20px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.cc-reel-cover { position: relative; display: block; aspect-ratio: 4 / 5; overflow: hidden; border-radius: 3px; text-decoration: none; background: #000; box-shadow: 0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.15); }
+.cc-reel-cover img, .cc-reel-cover video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cc-reel-cover .cc-reel-play { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 34px; text-shadow: 0 1px 6px rgba(0,0,0,.6); pointer-events: none; }
+@media (max-width: 767px) { .cc-reel-covers { grid-template-columns: repeat(2, 1fr); max-width: 500px; } }
+</style>
+{% endif %}
 {% if featured or reels %}<script async src="https://www.instagram.com/embed.js"></script>{% endif %}
 {{ content | safe }}
