@@ -12,10 +12,10 @@
 .cp-marquee-title{ text-align:center; font-family: Georgia, 'Times New Roman', serif; font-size:26px; letter-spacing:3px; text-transform:uppercase; color:#3a3a3a; margin:0 0 8px; }
 .cp-marquee-sub{ text-align:center; font-family: Raleway, sans-serif; font-size:12px; letter-spacing:4px; text-transform:uppercase; color:#a9a49c; margin:0 0 34px; }
 .cp-row{ overflow:hidden; width:100%; -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent); }
-.cp-track{ display:flex; align-items:center; width:max-content; gap:56px; animation: cp-scroll 65s linear infinite; }
+.cp-track{ display:flex; align-items:center; width:max-content; gap:46px; animation: cp-scroll 65s linear infinite; }
 .cp-row:hover .cp-track{ animation-play-state: paused; }
-.cp-track img{ height:64px; width:auto; flex-shrink:0; display:block; }
-@keyframes cp-scroll{ from{ transform:translateX(0); } to{ transform:translateX(calc(-50% + 28px)); } }
-@media (max-width:767px){ .cp-marquee-title{ font-size:20px; letter-spacing:2px; } .cp-track{ gap:36px; } .cp-track img{ height:46px; } @keyframes cp-scroll{ from{ transform:translateX(0); } to{ transform:translateX(calc(-50% + 18px)); } } }
+.cp-track img{ height:46px; width:auto; flex-shrink:0; display:block; }
+@keyframes cp-scroll{ from{ transform:translateX(0); } to{ transform:translateX(calc(-50% + 23px)); } }
+@media (max-width:767px){ .cp-marquee-title{ font-size:20px; letter-spacing:2px; } .cp-track{ gap:30px; } .cp-track img{ height:32px; } @keyframes cp-scroll{ from{ transform:translateX(0); } to{ transform:translateX(calc(-50% + 15px)); } } }
 @media (prefers-reduced-motion: reduce){ .cp-track{ animation:none; } }
 </style>
