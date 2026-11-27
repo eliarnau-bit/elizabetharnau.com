@@ -2,16 +2,9 @@
 <h3 class="cp-marquee-title">Clients &amp; Partnerships</h3>
 <p class="cp-marquee-sub">Among others</p>
 <div class="cp-row"><div class="cp-track">
-<img src="/assets/images/2026/11/clients-rows/row1.jpg" alt="Client logos" loading="lazy">
-<img src="/assets/images/2026/11/clients-rows/row2.jpg" alt="Client logos" loading="lazy">
-<img src="/assets/images/2026/11/clients-rows/row3.jpg" alt="Client logos" loading="lazy">
-<img src="/assets/images/2026/11/clients-rows/row4.jpg" alt="Client logos" loading="lazy">
-<img src="/assets/images/2026/11/clients-rows/row5.jpg" alt="Client logos" loading="lazy">
-<img src="/assets/images/2026/11/clients-rows/row1.jpg" alt="" aria-hidden="true" loading="lazy">
-<img src="/assets/images/2026/11/clients-rows/row2.jpg" alt="" aria-hidden="true" loading="lazy">
-<img src="/assets/images/2026/11/clients-rows/row3.jpg" alt="" aria-hidden="true" loading="lazy">
-<img src="/assets/images/2026/11/clients-rows/row4.jpg" alt="" aria-hidden="true" loading="lazy">
-<img src="/assets/images/2026/11/clients-rows/row5.jpg" alt="" aria-hidden="true" loading="lazy">
+{% set logos = ["jaguar","virgin-voyages","morgan-de-toi","kiehls","byd","aire","ocean-spa","isdin","sanrio","london-concours","zuhair-murad","serras","singita","caffe-concerto","cymbeline-1","cymbeline-2","le-rina","amelie","herve-paris","yolancris","randy-fenoli","fashiontv","novia-dart","julia-kontogruni","zs-zapata","shruti-sancheti","calla-blanche","elle","dando-london","bata","watters-designs","fete-des-lanternes","gout-rouge-romain-fornell","hoy-voy","immersive-restaurants"] %}
+{% for l in logos %}<img src="/assets/images/2026/11/client-logos/{{ l }}.png" alt="Client logo">{% endfor %}
+{% for l in logos %}<img src="/assets/images/2026/11/client-logos/{{ l }}.png" alt="" aria-hidden="true">{% endfor %}
 </div></div>
 </div>
 <style>
@@ -19,10 +12,10 @@
 .cp-marquee-title{ text-align:center; font-family: Georgia, 'Times New Roman', serif; font-size:26px; letter-spacing:3px; text-transform:uppercase; color:#3a3a3a; margin:0 0 8px; }
 .cp-marquee-sub{ text-align:center; font-family: Raleway, sans-serif; font-size:12px; letter-spacing:4px; text-transform:uppercase; color:#a9a49c; margin:0 0 34px; }
 .cp-row{ overflow:hidden; width:100%; -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent); }
-.cp-track{ display:flex; align-items:center; width:max-content; animation: cp-scroll 55s linear infinite; }
+.cp-track{ display:flex; align-items:center; width:max-content; gap:56px; animation: cp-scroll 65s linear infinite; }
 .cp-row:hover .cp-track{ animation-play-state: paused; }
-.cp-track img{ height:64px; width:auto; margin-right:64px; flex-shrink:0; display:block; }
-@keyframes cp-scroll{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
-@media (max-width:767px){ .cp-marquee-title{ font-size:20px; letter-spacing:2px; } .cp-track img{ height:46px; margin-right:40px; } }
+.cp-track img{ height:64px; width:auto; flex-shrink:0; display:block; }
+@keyframes cp-scroll{ from{ transform:translateX(0); } to{ transform:translateX(calc(-50% + 28px)); } }
+@media (max-width:767px){ .cp-marquee-title{ font-size:20px; letter-spacing:2px; } .cp-track{ gap:36px; } .cp-track img{ height:46px; } @keyframes cp-scroll{ from{ transform:translateX(0); } to{ transform:translateX(calc(-50% + 18px)); } } }
 @media (prefers-reduced-motion: reduce){ .cp-track{ animation:none; } }
 </style>
