@@ -13,27 +13,28 @@ scripts:
 </div>
 <div class="cc-covers">
 <div class="cc-cover-item">
-<a class="cc-cover-btn" href="/content-creation/lifestyle/">Lifestyle</a>
+<a class="cc-cover-title" href="/content-creation/lifestyle/">Lifestyle</a>
 <a class="cc-cover" href="/content-creation/lifestyle/"><img src="/assets/images/2026/09/content-creation-lifestyle.jpg" alt="Lifestyle content by Elizabeth Arnau"></a>
 </div>
 <div class="cc-cover-item">
-<a class="cc-cover-btn" href="/content-creation/fashion/">Fashion</a>
+<a class="cc-cover-title" href="/content-creation/fashion/">Fashion</a>
 <a class="cc-cover" href="/content-creation/fashion/"><img src="/assets/images/2026/09/content-creation-fashion.jpg" alt="Fashion content by Elizabeth Arnau" style="object-position: center 25%;"></a>
 </div>
 <div class="cc-cover-item">
-<a class="cc-cover-btn" href="/content-creation/beauty/">Beauty</a>
+<a class="cc-cover-title" href="/content-creation/beauty/">Beauty</a>
 <a class="cc-cover" href="/content-creation/beauty/"><img src="/assets/images/2026/09/content-creation-beauty.jpg" alt="Beauty content by Elizabeth Arnau"></a>
 </div>
 <div class="cc-cover-item">
-<a class="cc-cover-btn" href="/content-creation/media-kit/">Media Kit</a>
+<a class="cc-cover-title" href="/content-creation/media-kit/">Media Kit</a>
 <a class="cc-cover" href="/content-creation/media-kit/"><img src="/assets/images/2026/11/ElizabethArnau_MediaKit.jpg" alt="Elizabeth Arnau media kit" style="object-position: center top;"></a>
 </div>
 </div>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 .cc-covers { max-width: 1300px; margin: 0 auto 60px; padding: 0 60px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-.cc-cover-item { display: flex; flex-direction: column; align-items: stretch; gap: 16px; }
-.cc-cover-btn { width: 100%; box-sizing: border-box; text-align: center; font-family: Raleway, sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: #54595f; background: none; border: 1px solid #54595f; padding: 10px 26px; text-decoration: none; transition: color .2s ease, border-color .2s ease; }
-.cc-cover-btn:hover { color: #88bec1; border-color: #88bec1; }
+.cc-cover-item { display: flex; flex-direction: column; align-items: stretch; gap: 10px; }
+.cc-cover-title { width: 100%; box-sizing: border-box; display: block; font-family: 'Bebas Neue', Raleway, sans-serif; font-size: clamp(24px, 2vw, 32px); font-weight: 400; letter-spacing: 2px; text-transform: uppercase; color: #2b2b2b; text-decoration: none; padding-bottom: 10px; border-bottom: 2px solid #2b2b2b; transition: color .25s ease, border-color .25s ease; }
+.cc-cover-title:hover { color: #88bec1; border-color: #88bec1; }
 .cc-cover { position: relative; display: block; width: 100%; aspect-ratio: 2 / 3; overflow: hidden; border-radius: 3px; text-decoration: none; }
 .cc-cover img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .6s ease; }
 .cc-cover:hover img { transform: scale(1.04); }
