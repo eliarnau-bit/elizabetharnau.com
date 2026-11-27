@@ -1,23 +1,28 @@
 <div class="cp-marquee-wrap">
 <h3 class="cp-marquee-title">Clients &amp; Partnerships</h3>
 <p class="cp-marquee-sub">Among others</p>
-<div class="cp-row"><div class="cp-track"><img src="/assets/images/2026/11/clients-rows/row1.jpg" alt="Client logos" loading="lazy"><img src="/assets/images/2026/11/clients-rows/row1.jpg" alt="" aria-hidden="true" loading="lazy"></div></div>
-<div class="cp-row cp-reverse"><div class="cp-track"><img src="/assets/images/2026/11/clients-rows/row2.jpg" alt="Client logos" loading="lazy"><img src="/assets/images/2026/11/clients-rows/row2.jpg" alt="" aria-hidden="true" loading="lazy"></div></div>
-<div class="cp-row"><div class="cp-track"><img src="/assets/images/2026/11/clients-rows/row3.jpg" alt="Client logos" loading="lazy"><img src="/assets/images/2026/11/clients-rows/row3.jpg" alt="" aria-hidden="true" loading="lazy"></div></div>
-<div class="cp-row cp-reverse"><div class="cp-track"><img src="/assets/images/2026/11/clients-rows/row4.jpg" alt="Client logos" loading="lazy"><img src="/assets/images/2026/11/clients-rows/row4.jpg" alt="" aria-hidden="true" loading="lazy"></div></div>
-<div class="cp-row"><div class="cp-track"><img src="/assets/images/2026/11/clients-rows/row5.jpg" alt="Client logos" loading="lazy"><img src="/assets/images/2026/11/clients-rows/row5.jpg" alt="" aria-hidden="true" loading="lazy"></div></div>
+<div class="cp-row"><div class="cp-track">
+<img src="/assets/images/2026/11/clients-rows/row1.jpg" alt="Client logos" loading="lazy">
+<img src="/assets/images/2026/11/clients-rows/row2.jpg" alt="Client logos" loading="lazy">
+<img src="/assets/images/2026/11/clients-rows/row3.jpg" alt="Client logos" loading="lazy">
+<img src="/assets/images/2026/11/clients-rows/row4.jpg" alt="Client logos" loading="lazy">
+<img src="/assets/images/2026/11/clients-rows/row5.jpg" alt="Client logos" loading="lazy">
+<img src="/assets/images/2026/11/clients-rows/row1.jpg" alt="" aria-hidden="true" loading="lazy">
+<img src="/assets/images/2026/11/clients-rows/row2.jpg" alt="" aria-hidden="true" loading="lazy">
+<img src="/assets/images/2026/11/clients-rows/row3.jpg" alt="" aria-hidden="true" loading="lazy">
+<img src="/assets/images/2026/11/clients-rows/row4.jpg" alt="" aria-hidden="true" loading="lazy">
+<img src="/assets/images/2026/11/clients-rows/row5.jpg" alt="" aria-hidden="true" loading="lazy">
+</div></div>
 </div>
 <style>
 .cp-marquee-wrap{ width:100%; max-width:1300px; margin:0 auto 60px; padding:0 20px; box-sizing:border-box; }
 .cp-marquee-title{ text-align:center; font-family: Georgia, 'Times New Roman', serif; font-size:26px; letter-spacing:3px; text-transform:uppercase; color:#3a3a3a; margin:0 0 8px; }
 .cp-marquee-sub{ text-align:center; font-family: Raleway, sans-serif; font-size:12px; letter-spacing:4px; text-transform:uppercase; color:#a9a49c; margin:0 0 34px; }
-.cp-row{ overflow:hidden; width:100%; margin-bottom:22px; -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent); }
-.cp-row:last-child{ margin-bottom:0; }
-.cp-track{ display:flex; align-items:center; width:max-content; animation: cp-scroll 38s linear infinite; }
-.cp-row.cp-reverse .cp-track{ animation-direction: reverse; animation-duration: 44s; }
+.cp-row{ overflow:hidden; width:100%; -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent); }
+.cp-track{ display:flex; align-items:center; width:max-content; animation: cp-scroll 55s linear infinite; }
 .cp-row:hover .cp-track{ animation-play-state: paused; }
-.cp-track img{ height:46px; width:auto; margin-right:56px; flex-shrink:0; display:block; }
+.cp-track img{ height:64px; width:auto; margin-right:64px; flex-shrink:0; display:block; }
 @keyframes cp-scroll{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
-@media (max-width:767px){ .cp-marquee-title{ font-size:20px; letter-spacing:2px; } .cp-track img{ height:34px; margin-right:36px; } }
+@media (max-width:767px){ .cp-marquee-title{ font-size:20px; letter-spacing:2px; } .cp-track img{ height:46px; margin-right:40px; } }
 @media (prefers-reduced-motion: reduce){ .cp-track{ animation:none; } }
 </style>
